@@ -1,0 +1,15 @@
+on:
+  push:
+    tags:
+    - 'v[0-9]*' 
+
+jobs:
+  build:
+   name: Release
+   runs-on: ubuntu-latest
+   steps:
+   - name: Checkout
+     uses: actions/checkout@v2
+   - name: Setup
+     id: setup
+     run: bash setup.sh
