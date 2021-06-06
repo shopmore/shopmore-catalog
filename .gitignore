@@ -1,3 +1,4 @@
 .node-version
 .python-version
 .shopmore-version
+node_modules/

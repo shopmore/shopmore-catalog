@@ -1,0 +1,1 @@
+&copy; Mirella Di Girolmo &amp; Team

@@ -15,5 +15,6 @@ else echo "You need to run 'bash setup.sh' first"
 fi
 
 if [[ "$(cat .shopmore-version)" != "$(cat $LOCAL_BIN/.shopmore-version)" ]]
-then echo "Your setup is outdated. You need to run setup.sh again"
+then echo "WARINING! Your setup is outdated."
+     echo "You need to run setup.sh again, or bad things will happen."
 fi
