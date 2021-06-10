@@ -43,7 +43,7 @@ import { Col } from "sveltestrap";
         <NavLink href="#login/"><Icon name="person" /></NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#cart"><Icon name="cart" /></NavLink>
+        <NavLink href="/cart"><Icon name="cart" /></NavLink>
       </NavItem>
       <Dropdown nav inNavbar>
         <DropdownToggle nav caret>Category</DropdownToggle>
