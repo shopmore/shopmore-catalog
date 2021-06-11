@@ -40,7 +40,7 @@ import { Col } from "sveltestrap";
       </form>
       </NavItem>
       <NavItem>
-        <NavLink href="#login/"><Icon name="person" /></NavLink>
+        <NavLink href="/login"><Icon name="person" /></NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="/cart"><Icon name="cart" /></NavLink>

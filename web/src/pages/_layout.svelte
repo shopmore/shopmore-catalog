@@ -18,11 +18,19 @@
         </Col>
     </Row>
     <Row>
-        <Col xs="3">
-            <Menu />
+        <Col xs="12">
+            <hr> 
         </Col>
+    </Row>
+    <Row>
+        
         <Col xs="9">
             <slot />
+        </Col>
+    </Row>
+    <Row>
+        <Col xs="12">
+           <hr> 
         </Col>
     </Row>
     <Row>
