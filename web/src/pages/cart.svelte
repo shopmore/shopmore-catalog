@@ -95,8 +95,8 @@ import {
                 </FormGroup>
               </td>
               <td>
-                <var class="price">$304</var><br>
-                <small class="text-muted">$152.22 each</small>
+                <var class="price">$354</var><br>
+                <small class="text-muted">$152.23 each</small>
               </td>
               <td></td>
             </tr>
