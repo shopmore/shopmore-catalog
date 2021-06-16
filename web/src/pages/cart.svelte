@@ -96,7 +96,7 @@ import {
               </td>
               <td>
                 <var class="price">$304</var><br>
-                <small class="text-muted">$152.20 each</small>
+                <small class="text-muted">$152.22 each</small>
               </td>
               <td></td>
             </tr>
