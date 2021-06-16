@@ -48,8 +48,8 @@ import { Col } from "sveltestrap";
       <Dropdown nav inNavbar>
         <DropdownToggle nav caret>Category</DropdownToggle>
         <DropdownMenu end>
-          <DropdownItem>Option 1</DropdownItem>
-          <DropdownItem>Option 2</DropdownItem>
+          <DropdownItem href="/category">Clothing</DropdownItem>
+          <DropdownItem>Fashion</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Reset</DropdownItem>
         </DropdownMenu>
