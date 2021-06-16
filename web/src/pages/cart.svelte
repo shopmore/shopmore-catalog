@@ -98,7 +98,12 @@ import {
                 <var class="price">$354</var><br>
                 <small class="text-muted">$152.23 each</small>
               </td>
-              <td></td>
+              <td>
+                <ButtonToolbar>
+                  <Button>Like</Button>
+                  <Button>Remove</Button>
+                </ButtonToolbar>
+              </td>
             </tr>
             <tr>
               <td>
