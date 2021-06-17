@@ -3,9 +3,11 @@
 </script>
 
 <Accordion>
-    <AccordionItem active header="Home">Fallbrook</AccordionItem>
-    <AccordionItem header="School">
-        <a href="#home">Buena Vista Elementary</a>
+    <AccordionItem active header="Home">Info</AccordionItem>
+    <AccordionItem header="Clothing">
+        <a href="#home">Men</a><br>
+        <a href="#home">Women</a><br>
+        <a href="#home">Child</a><br>
     </AccordionItem>
-    <AccordionItem header="Library">UCSB Library</AccordionItem>
+    <AccordionItem header="Fashion">Accesories</AccordionItem>
 </Accordion>
