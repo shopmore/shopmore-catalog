@@ -1,8 +1,20 @@
 <script>
   import { text } from 'svelte/internal';
+  const colors = [
+            'primary',
+            'secondary',
+            'success',
+            'danger',
+            'warning',
+            'info',
+            'light',
+            'dark'
+        ];
 import {
     Button,
+    Badge,
     Card,
+    Icon,
     CardBody,
     CardFooter,
     CardHeader,
@@ -18,80 +30,228 @@ import {
     Row,
     Pagination, 
     PaginationItem,
-     PaginationLink
+    PaginationLink,
+    Container,
+    ListGroup,
+    ListGroupItem,
+    Breadcrumb,
+    BreadcrumbItem
   } from 'sveltestrap';
   import MenuCat from "./_components/MenuCat.svelte";
 </script>
+
+<!-- ========================= SECTION PAGETOP ========================= -->
+<section class="section-pagetop">
+  <Container>
+    <h2>Category products</h2>
+    <Breadcrumb>
+      <BreadcrumbItem>
+        <a href="#home" class="text-decoration-none">Home</a>
+      </BreadcrumbItem>
+      <BreadcrumbItem active>Clothing</BreadcrumbItem>
+    </Breadcrumb>
+  </Container>
+</section>
+<!-- ========================= SECTION INTRO END// ========================= -->
+
 <Row>
-<Col xs="3">
-    <MenuCat />
-</Col>
-<Col xs="9">
-
-<Card>
-  <CardHeader>
-    <CardTitle>1 Items found</CardTitle>
-  </CardHeader>
-  <CardBody>
-    <CardSubtitle></CardSubtitle>
-    <CardText>
-    <Form>
-      <FormGroup>
-      <table>
-      <tr>
-      <td><img src="catalog/Bimbo/camiciabianca.png" alt="Shirt" height="250px" width="150px"></td>
-      <td> <h3>Name product</h3>
-      <p>Description Description Description Description </p></td>
-      <td>
-      <h3>10 euros</h3>
-      <Button color="primary">Add wish list</Button></td>
-      </tr>
-      </table>
-       
-         
-       
-       
-       
-      </FormGroup>
-      <FormGroup>
-       <Button color="danger" block>Details</Button>
-      </FormGroup>
-      
-    </Form>
-   
-    </CardText>
+  <Col xs="3">
+      <MenuCat />
+  </Col>
+  <Col xs="9">
+    <Row>
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+              <a href="#" class="title text-decoration-none">Great item name goes here</a>
+              <div class="mt-2 mb-2">
+                <span class="price">$1280</span>
+              </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#" >Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
     
-  </CardBody>
-  <CardFooter><Pagination ariaLabel="Page navigation example">
-  <PaginationItem disabled>
-    <PaginationLink first href="#" />
-  </PaginationItem>
-  <PaginationItem disabled>
-    <PaginationLink previous href="#" />
-  </PaginationItem>
-  <PaginationItem active>
-    <PaginationLink href="#">1</PaginationLink>
-  </PaginationItem>
-  <PaginationItem>
-    <PaginationLink href="#">2</PaginationLink>
-  </PaginationItem>
-  <PaginationItem>
-    <PaginationLink href="#">3</PaginationLink>
-  </PaginationItem>
-  <PaginationItem>
-    <PaginationLink href="#">4</PaginationLink>
-  </PaginationItem>
-  <PaginationItem>
-    <PaginationLink href="#">5</PaginationLink>
-  </PaginationItem>
-  <PaginationItem>
-    <PaginationLink next href="#" />
-  </PaginationItem>
-  <PaginationItem>
-    <PaginationLink last href="#" />
-  </PaginationItem>
-</Pagination></CardFooter>
-</Card>
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+            <a href="#" class="title text-decoration-none">Great item name goes here</a>
+            <div class="mt-2 mb-2">
+              <span class="price">$1280</span>
+            </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#">Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
+    
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+            <a href="#" class="title text-decoration-none">Great item name goes here</a>
+            <div class="mt-2 mb-2">
+              <span class="price">$1280</span>
+            </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#">Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
+    
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+            <a href="#" class="title text-decoration-none">Great item name goes here</a>
+            <div class="mt-2 mb-2">
+              <span class="price">$1280</span>
+            </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#">Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
+    
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+            <a href="#" class="title text-decoration-none">Great item name goes here</a>
+            <div class="mt-2 mb-2">
+              <span class="price">$1280</span>
+            </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#">Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
+    
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+            <a href="#" class="title text-decoration-none">Great item name goes here</a>
+            <div class="mt-2 mb-2">
+              <span class="price">$1280</span>
+            </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#">Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
+    
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+            <a href="#" class="title text-decoration-none">Great item name goes here</a>
+            <div class="mt-2 mb-2">
+              <span class="price">$1280</span>
+            </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#">Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
+    
+      <Col md="4">
+        <Card color="light" class="mb-3">
+          <CardBody>
+            <Badge href="/detail" color="danger" class="text-decoration-none">
+              <Icon name="search" />Details
+            </Badge>
+            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+          </CardBody> <!-- img-wrap.// -->
+          <CardFooter color="light">
+            <a href="#" class="title text-decoration-none">Great item name goes here</a>
+            <div class="mt-2 mb-2">
+              <span class="price">$1280</span>
+            </div> <!-- price-wrap.// -->
+            <div class="mb-1">
+              <Button block color="primary" href="#">Add to cart</Button>
+            </div>
+          </CardFooter>
+        </Card>
+      </Col> <!-- col.// -->
+    </Row>
+  </Col>
 
-</Col>
+  <Col xs="3"></Col>
+  <Col xs="9">
+    <Pagination ariaLabel="Page navigation example">
+      <PaginationItem disabled>
+        <PaginationLink first href="#" />
+      </PaginationItem>
+      <PaginationItem disabled>
+        <PaginationLink previous href="#" />
+      </PaginationItem>
+      <PaginationItem active>
+        <PaginationLink href="#">1</PaginationLink>
+      </PaginationItem>
+      <PaginationItem>
+        <PaginationLink href="#">2</PaginationLink>
+      </PaginationItem>
+      <PaginationItem>
+        <PaginationLink href="#">3</PaginationLink>
+      </PaginationItem>
+      <PaginationItem>
+        <PaginationLink href="#">4</PaginationLink>
+      </PaginationItem>
+      <PaginationItem>
+        <PaginationLink href="#">5</PaginationLink>
+      </PaginationItem>
+      <PaginationItem>
+        <PaginationLink next href="#" />
+      </PaginationItem>
+      <PaginationItem>
+        <PaginationLink last href="#" />
+      </PaginationItem>
+    </Pagination>
+  </Col>
 </Row>
