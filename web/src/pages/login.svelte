@@ -22,7 +22,7 @@ import Header from './_components/Header.svelte';
   
 </script>
 <Row>
-<Col xs="4"></Col>
+<Col xs="3"></Col>
 
 <Col xs="6" >
 
@@ -56,6 +56,6 @@ import Header from './_components/Header.svelte';
   <CardFooter>Don't have account? Sign up</CardFooter>
 </Card>
 </Col>
-<Col xs="4"></Col>
+<Col xs="3"></Col>
 
 </Row>

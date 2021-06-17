@@ -24,7 +24,7 @@
     </Row>
     <Row>
         
-        <Col xs="9">
+        <Col xs="12">
             <slot />
         </Col>
     </Row>
