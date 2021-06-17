@@ -66,7 +66,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
               <a href="#" class="title text-decoration-none">Great item name goes here</a>
@@ -86,7 +86,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
             <a href="#" class="title text-decoration-none">Great item name goes here</a>
@@ -106,7 +106,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
             <a href="#" class="title text-decoration-none">Great item name goes here</a>
@@ -126,7 +126,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
             <a href="#" class="title text-decoration-none">Great item name goes here</a>
@@ -146,7 +146,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
             <a href="#" class="title text-decoration-none">Great item name goes here</a>
@@ -166,7 +166,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
             <a href="#" class="title text-decoration-none">Great item name goes here</a>
@@ -186,7 +186,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
             <a href="#" class="title text-decoration-none">Great item name goes here</a>
@@ -206,7 +206,7 @@ import {
             <Badge href="/detail" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
-            <img src="catalog/Bimbo/camiciabianca.png" height="220" width="220">
+            <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
           </CardBody> <!-- img-wrap.// -->
           <CardFooter color="light">
             <a href="#" class="title text-decoration-none">Great item name goes here</a>
