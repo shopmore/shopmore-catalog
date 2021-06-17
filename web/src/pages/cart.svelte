@@ -34,6 +34,7 @@
       'light',
       'dark'
     ];
+    import Menu from "./_components/Menu.svelte";
 </script>
 
 <!-- ========================= SECTION PAGETOP ========================= -->
@@ -48,7 +49,10 @@
 <section class="section-content padding-y">
   <Container>
     <Row>
-      <Col md = "8">
+      <Col xs="3">
+        <Menu />
+      </Col>
+      <Col md = "6">
         <Card>
           <table class="table table-borderless table-shopping-cart">
             <thead class="text-muted">
@@ -63,7 +67,7 @@
               <tr>
                 <td>
                   <figure class="itemside">
-                    <div class="aside"><img src="1.jpg" alt="imageItem" class="img-sm"></div>
+                    <div class="aside"><img src="catalog/Bimbo/camiciabianca.png" alt="imageItem" class="img-sm" width="80" height="80"></div>
                     <figcaption class="info">
                       <a href="#" class="title text-dark text-decoration-none">Name of some product</a>
                       <p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
@@ -97,7 +101,7 @@
               <tr>
                 <td>
                   <figure class="itemside">
-                    <div class="aside"><img src="2.jpg" alt="imageItem" class="img-sm"></div>
+                    <div class="aside"><img src="catalog/Bimbo/camiciabianca.png" alt="imageItem" class="img-sm" width="80" height="80"></div>
                     <figcaption class="info">
                       <a href="#" class="title text-dark text-decoration-none">Name of some product</a>
                       <p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
@@ -131,7 +135,7 @@
               <tr>
                 <td>
                   <figure class="itemside">
-                    <div class="aside"><img src="3.jpg" alt="imageItem" class="img-sm"></div>
+                    <div class="aside"><img src="catalog/Bimbo/camiciabianca.png" alt="imageItem" class="img-sm" width="80" height="80"></div>
                     <figcaption class="info">
                       <a href="#" class="title text-dark text-decoration-none">Name of some product</a>
                       <p class="small text-muted">Size: XL, Color: blue, Brand: Tissot</p>
@@ -165,7 +169,7 @@
         </Card> <!-- card.// -->
 
       </Col> <!-- col.// -->
-      <Col md = "4">
+      <Col md = "3">
         <Card class="mb-4">
           <CardBody>
             <form>
@@ -195,7 +199,7 @@
             </dl>
             <hr>
             <p class="text-center mb-4">
-              <img src="Payment.jpg" alt="imagePayments" height="26">
+              <img src="catalog/Bimbo/camiciabianca.png" alt="imagePayments" width="100" height="26">
             </p>
           </CardBody> <!-- card-body.// -->
         </Card> <!-- card .// -->
