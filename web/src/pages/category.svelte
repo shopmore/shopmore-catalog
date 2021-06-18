@@ -71,7 +71,7 @@ import {
           <CardFooter color="light">
               <a href="#" class="title text-decoration-none">Great item name goes here</a>
               <div class="mt-2 mb-2">
-                <span class="price">$1280</span>
+                <span class="price">&euro;280</span>
               </div> <!-- price-wrap.// -->
             <div class="mb-1">
               <Button block color="primary" href="#" >Add to cart</Button>
