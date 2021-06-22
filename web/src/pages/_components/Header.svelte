@@ -1,24 +1,24 @@
 <script>
-    import { text } from "svelte/internal";
-import { Col } from "sveltestrap";
-    import { Icon } from "sveltestrap";
-    import {
-        Button,
-        ButtonDropdown,
-        Dropdown,
-        DropdownItem,
-        DropdownMenu,
-        DropdownToggle,
-        Collapse,
-        Navbar,
-        NavbarToggler,
-        NavbarBrand,
-        Nav,
-        NavItem,
-        NavLink,
-    } from "sveltestrap";
+  import { text } from "svelte/internal";
+  import { Col } from "sveltestrap";
+  import { Icon } from "sveltestrap";
+  import {
+    Button,
+    ButtonDropdown,
+    Dropdown,
+    DropdownItem,
+    DropdownMenu,
+    DropdownToggle,
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+  } from "sveltestrap";
 
-  
+  import { get } from "../../util";
 
   let isOpen = false;
 
@@ -29,15 +29,15 @@ import { Col } from "sveltestrap";
 
 <Navbar color="navbar navbar-light bg-light" light expand="md">
   <NavbarBrand href="/">ShopMore <Icon name="cloud" /></NavbarBrand>
-  
+
   <NavbarToggler on:click={() => (isOpen = !isOpen)} />
   <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
     <Nav class="ms-auto" navbar>
       <NavItem>
-      <form>
-      <input type="text" size="40">
-      <Button secondary>Search</Button>
-      </form>
+        <form>
+          <input type="text" size="40" />
+          <Button secondary>Search</Button>
+        </form>
       </NavItem>
       <NavItem>
         <NavLink href="/login"><Icon name="person" /></NavLink>
@@ -52,9 +52,13 @@ import { Col } from "sveltestrap";
           <DropdownItem>Fashion</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Reset</DropdownItem>
+          {#await get("shopmore/category") then categories}
+            {#each categories.category as category }
+             <DropdownItem>{category}</DropdownItem>
+            {/each}
+          {/await}
         </DropdownMenu>
       </Dropdown>
     </Nav>
   </Collapse>
 </Navbar>
-
