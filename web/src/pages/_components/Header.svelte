@@ -1,5 +1,4 @@
 <script>
-  import { text } from "svelte/internal";
   import { Col } from "sveltestrap";
   import { Icon } from "sveltestrap";
   import {
@@ -48,15 +47,14 @@
       <Dropdown nav inNavbar>
         <DropdownToggle nav caret>Category</DropdownToggle>
         <DropdownMenu end>
-          <DropdownItem href="/category">Clothing</DropdownItem>
-          <DropdownItem>Fashion</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Reset</DropdownItem>
           {#await get("shopmore/category") then categories}
             {#each categories.category as category }
-             <DropdownItem>{category}</DropdownItem>
+             <DropdownItem><a href={"/category?"+category}>{category}</a></DropdownItem>
             {/each}
           {/await}
+          <DropdownItem divider />
+          <DropdownItem>Reset</DropdownItem>
+         
         </DropdownMenu>
       </Dropdown>
     </Nav>

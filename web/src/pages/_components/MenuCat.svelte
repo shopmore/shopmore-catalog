@@ -15,13 +15,17 @@
         NavItem,
         NavLink,
     } from "sveltestrap";
+    import { get } from "../../util";
 </script>
 
 <Accordion>
     <AccordionItem active header="Category">
-     <a href="#home">Men</a><br>
-        <a href="#home">Women</a><br>
-        <a href="#home">Child</a><br>
+    {#await get("shopmore/categoryproducts") then categoriesprod}
+            {#each categoriesprod.categoryproduct as catprod }
+             <a href={"/catprod?"+catprod}>{catprod}</a><br>
+            {/each}
+    {/await}
+     
     </AccordionItem>
     <AccordionItem header="Price">
         <a href="#home">0-50 euros</a><br>

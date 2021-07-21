@@ -37,6 +37,7 @@ import {
     Breadcrumb,
     BreadcrumbItem
   } from 'sveltestrap';
+  import { get } from "../util";
   import MenuCat from "./_components/MenuCat.svelte";
 </script>
 
@@ -63,7 +64,7 @@ import {
       <Col md="4">
         <Card color="light" class="mb-3">
           <CardBody>
-            <Badge href="/detail" color="danger" class="text-decoration-none">
+            <Badge href="/detail/1" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
             <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
@@ -83,7 +84,7 @@ import {
       <Col md="4">
         <Card color="light" class="mb-3">
           <CardBody>
-            <Badge href="/detail" color="danger" class="text-decoration-none">
+            <Badge href="/detail/2" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
             <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
@@ -103,7 +104,7 @@ import {
       <Col md="4">
         <Card color="light" class="mb-3">
           <CardBody>
-            <Badge href="/detail" color="danger" class="text-decoration-none">
+            <Badge href="/detail/3" color="danger" class="text-decoration-none">
               <Icon name="search" />Details
             </Badge>
             <img src="catalog/Bimbo/camiciabianca.png" alt="itemImage" height="220" width="220">
