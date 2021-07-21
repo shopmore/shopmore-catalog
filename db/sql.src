@@ -1,0 +1,15 @@
+function _exec { 
+    echo ">>> EXEC $*"
+    nim action invoke samples/sql -p exec "$*" | jq .body
+}
+
+function _arr { 
+    echo ">>> ARR $*"
+    nim action invoke samples/sql -p arr "$*" | jq .body
+}
+
+function  _map { 
+    echo ">>> MAP $*"
+    nim action invoke samples/sql -p map "$*" | jq .body
+}
+
